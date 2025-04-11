@@ -1,5 +1,5 @@
 import sys
-
+from string import ascii_lowercase as letters
 from stats import get_num_words, get_char_dict
 
 def get_book_text(filepath: str) -> str:
@@ -31,12 +31,9 @@ def main() -> None:
     print(f"Found {num_words} total words")
 
     chars = get_char_dict(text)
-    sorted_chars = sort_dict(chars)
     print("--------- Character Count -------")
-    for item in sorted_chars:
-        key = list(item.keys())[0]
-        if key.isalpha():
-            print(f"{key}: {item[key]}")
+    for letter in letters:
+        print(f"{letter}: {chars[letter]}")
     print("============= END ===============")
 
 
