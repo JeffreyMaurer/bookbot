@@ -1,18 +1,5 @@
 def get_num_words(text: str) -> int:
-    delimiters = [' ']
-    list1 = text.split('\n')
-    list2 = []
-    for delimiter in delimiters:
-        for item in list1:
-            new_list = item.split(delimiter)
-            for new_item in new_list:
-                if new_item == '':
-                    continue
-                list2.append(new_item)
-        list1 = list2
-        list2 = []
-    count = len(list1)
-    return count
+    return text.split().__len__()
 
 def get_char_dict(text: str) -> dict:
     chars = dict()
