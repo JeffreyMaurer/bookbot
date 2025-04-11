@@ -20,6 +20,10 @@ def main():
     
     text = get_book_text(book_path)
 
+    if text.startswith("Error"):
+        print(text)
+        sys.exit(1)
+
     print(f"Analyzing book found at {book_path}...")
 
     num_words = get_num_words(text)
