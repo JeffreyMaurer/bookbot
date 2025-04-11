@@ -11,7 +11,7 @@ def get_book_text(filepath: str) -> str:
     return text
 
 
-def main():
+def main() -> None:
     if len(sys.argv) != 2:
         print("Usage: python3 main.py <path_to_book>")
         sys.exit(1)
@@ -22,7 +22,7 @@ def main():
 
     if text.startswith("Error"):
         print(text)
-        sys.exit(1)
+        sys.exit(2)
 
     print(f"Analyzing book found at {book_path}...")
 
