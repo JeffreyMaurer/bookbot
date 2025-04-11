@@ -17,9 +17,10 @@ def main():
         sys.exit(1)
     print("============ BOOKBOT ============")
     book_path = sys.argv[1]
-    print(f"Analyzing book found at {book_path}...")
-
+    
     text = get_book_text(book_path)
+
+    print(f"Analyzing book found at {book_path}...")
 
     num_words = get_num_words(text)
     print("----------- Word Count ----------")
