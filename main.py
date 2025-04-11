@@ -1,6 +1,6 @@
 import sys
 
-from stats import get_num_words, get_char_dict, sort_dict
+from stats import get_num_words, get_char_dict
 
 def get_book_text(filepath: str) -> str:
     try: 
