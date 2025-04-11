@@ -30,10 +30,10 @@ def main() -> None:
     print("----------- Word Count ----------")
     print(f"Found {num_words} total words")
 
-    chars = get_char_dict(text)
+    char_counts = get_char_dict(text)
     print("--------- Character Count -------")
     for letter in letters:
-        print(f"{letter}: {chars[letter]}")
+        print(f"{letter}: {char_counts[letter]}")
     print("============= END ===============")
 
 
