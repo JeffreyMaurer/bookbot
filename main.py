@@ -33,7 +33,7 @@ def main() -> None:
     char_counts = get_char_dict(text)
     print("--------- Character Count -------")
     for letter in letters:
-        print(f"{letter}: {char_counts[letter]}")
+        print(f"{letter}: {char_counts.get(letter, 0)}")
     print("============= END ===============")
 
 
